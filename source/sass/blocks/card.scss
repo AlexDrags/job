@@ -163,6 +163,24 @@
   }
 }
 
+.card__swiper-slide {
+  & .card__set {
+    position: absolute;
+    content: "";
+    width: 34px;
+    height: 70px;
+    top: 20px;
+    right: 20px;
+
+    & svg {
+      @include hover-focus {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+
 .card__swiper-pagination {
   @include vp-767 {
     display: none;

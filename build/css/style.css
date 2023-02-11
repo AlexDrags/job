@@ -1856,6 +1856,19 @@ button,
   top: 20px;
 }
 
+.card__swiper-slide .card__set {
+  position: absolute;
+  content: "";
+  width: 34px;
+  height: 70px;
+  top: 20px;
+  right: 20px;
+}
+
+.card__swiper-slide .card__set svg.focus-visible:focus {
+  opacity: 0.5;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1988,5 +2001,9 @@ button,
 @media (hover: hover) {
   .card__button:hover:not(.focus-visible) {
     opacity: 0.6;
+  }
+
+  .card__swiper-slide .card__set svg:hover:not(.focus-visible) {
+    opacity: 0.5;
   }
 }
